@@ -1,58 +1,62 @@
-# React Project - 2025
+# Smart Maple - Takvim Yönetim Uygulaması 🗓️
 
-Merhaba, bu projede sizden belirtilen hataların giderilmesi ve yeni özelliklerin uygulamaya eklenmesi beklenmektedir.
+Bu proje, **Smart Maple** şirketi için özel olarak geliştirilmiştir.  
+Amaç; şirket içi görev dağılımı, personel eşleşmeleri (pair) ve takvim yönetimini kullanıcı dostu bir arayüzle kolaylaştırmaktır.
 
-## 📦 Kurulum ve Başlatma Adımları
+---
 
-Projeyi çalıştırmak için aşağıdaki adımları takip edin:
+## 🚀 Kurulum ve Çalıştırma
 
-```sh
+Projeyi başlatmak için aşağıdaki komutları çalıştırabilirsiniz:
+
+```bash
 npm install --legacy-peer-deps
 npm run dev
-```
 
-## 🐞 Hata Düzeltmeleri ve 📌 İstekler
 
-**1. ProfileCard Bileşeni – Rol Gösterimi** (15P)
-- Sorun: Kullanıcı profili henüz yüklenmemişken, ProfileCard bileşeninde role alanı gösterilemiyor ve uygulama hata veriyor.
+Tamamlanan Geliştirmeler
 
-- Beklenen Davranış: Eğer state üzerinden profil datası henüz gelmemişse, localStorage içindeki role bilgisi kullanılmalı ve düzgün şekilde ekranda gösterilmelidir. Uygulama bu durumda hata vermemelidir.
+1. 🔐 ProfileCard Bileşeni – Rol Gösterimi 
+Kullanıcı profili null geldiğinde oluşan hata düzeltildi.
 
-**2. Takvim Başlangıç Tarihi ve Event Detayı** (15P)
-- Sorun: Takvim bileşeni (calendar) her zaman mevcut ay ile başlıyor.
+localStorage üzerinden alınan kullanıcı rolü doğru şekilde gösteriliyor.
 
-- Beklenen Davranış: Takvim, schedule verisindeki ilk etkinliğin (event) tarihine göre başlamalıdır. Yani ilk planlı etkinliğin olduğu aydan görünüm başlamalı.
+2. 📅 Takvim Başlangıç Tarihi ve Etkinlik Popup 
+Takvim, schedule verisindeki en erken tarih ile başlatılıyor.
 
-- Ek olarak, takvimdeki bir etkinliğe tıklandığında bir pop-up açılarak, ilgili etkinliğe ait personel adı, vardiya adı, tarih, başlangıç ve bitiş saatleri gibi tüm bilgilerin görüntülenmesi beklenmektedir.
+Etkinlik detayları popup bileşeni ile gösteriliyor.
 
-**3. Personel Bazlı Etkinlik Filtreleme** (10P)
-- Sorun: Takvimde tüm personellerin (staff) etkinlikleri gösteriliyor.
+3. 🔍 Personel Bazlı Filtreleme 
+Sadece seçili personelin etkinlikleri takvimde listeleniyor.
 
-- Beklenen Davranış: Sadece seçili olan personelin etkinlikleri takvimde görünmelidir.
+Redux state'i üzerinden filtreleme işlevi sağlandı.
 
-**4. Pair Günlerinin Altını Çizme** (25P)
-- Sorun: highlightedPair sınıfı tüm günlere uygulandığı için takvimdeki bütün günlerin altı çizili görünmekte.
+4. 🎨 Pair Günleri – Renkli Arka Plan ile Gösterim 
+.pair-staff-N sınıflarına özel degrade arka planlar eklendi.
 
-- Beklenen Davranış: Her personelin sahip olduğu pair listesi, o personelin başka bir personelle birlikte çalıştığı tarih aralıklarını belirtmektedir. Takvimde, seçili personelin bu tarih aralıklarına denk gelen günleri (pair günleri), highlightedPair sınıfı ile altı çizili olarak gösterilmelidir. Diğer günler normal şekilde görünmelidir.
+CSS özellikleri: border-radius: 6px; padding: 3px; box-shadow.
 
-- Ek olarak beklenen davranış, her pair’in takvimde kendi rengiyle temsil edilmesidir. Yani, takvimde tıklanabilir durumda olan her personel farklı bir renkte gösterilmelidir. Örneğin, Tuba seçili personel ise ve 14. gün Esra ile bir pair oluşturuyorsa, Esra'nın rengi kırmızıysa, ayın 14'ü kırmızı alt çizgiyle vurgulanmalıdır.
 
-**5. Takvimde Sürükle-Bırak Özelliğinin Kontrol Edilmesi** (5P)
-- Sorun: Takvim üzerindeki etkinlikler (events) kullanıcı tarafından sürüklenip taşınabiliyor.
+5. 🔁 Drag and Drop Özelliği 
+Görevler takvim üzerinde sürüklenip bırakılabiliyor.
 
-- Beklenen Davranış (Opsiyon 1): Etkinlikler sürüklenemez olmalı, yani "drag and drop" özelliği devre dışı bırakılmalıdır. (5P)
+Yeni tarih bilgisi Redux store'a aktarılıyor.
 
-- Beklenen Davranış (Opsiyon 2): Etkinlikler sürüklenebilir şekilde kalmalıdır. Ancak, takvimdeki bir etkinlik sürüklenerek günü değiştirildiğinde, bu değişiklik state/redux verisine yansıtılmalıdır. Bu işlemlerin, ilgili bileşen içinde ve projenin store klasörü altında gerçekleştirilmesi gerekmektedir. (25P)
+6. 🧩 UI/UX İyileştirmeleri
+Renkler, gölgeler, köşeler ve padding’ler ile modern görünüm sağlandı.
 
-**6. Tasarım Güncellemeleri** (25P + Ekstra)
-- Beklenti: Mevcut bileşenlerin görsel ve yapısal tasarımları elinizdeki verilere uygun şekilde iyileştirilmeli ve modern, kullanıcı dostu bir arayüz haline getirilmelidir.
+Mobil uyumlu (responsive) tasarım geliştirildi.
 
-#
----
-#
- 
-📝 **Öneri**: Kullanıcı deneyimini artıracak şekilde yeniden düzenlemeler yapabilir, component hiyerarşisini sadeleştirebilir ve UI/UX anlamında profesyonel dokunuşlar ekleyebilirsiniz.
+Bileşen yapısı sadeleştirildi ve tekrar kullanılabilir hâle getirildi.
 
-**Her geliştirme adımında kodun okunabilirliğine, performansına ve bileşenlerin yeniden kullanılabilirliğine dikkat edilmesi beklenmektedir.Proje ile ilgili sorularınızı info@smart-maple.com adresine iletebilirsiniz.**
 
-✨ Teşekkürler!
+📸 Ekran Görüntüleri
+🔹 ![Ana Takvim Görünümü](calendar-main.png)
+
+🔹 Personel Detay Pop-up
+    (event-details)
+🔹 React-Redux Drag Drop Özelliği
+    (redux.png)
+
+
+✨ Teşekkürler
