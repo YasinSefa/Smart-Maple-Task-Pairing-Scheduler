@@ -51,7 +51,7 @@ Bileşen yapısı sadeleştirildi ve tekrar kullanılabilir hâle getirildi.
 
 
 📸 Ekran Görüntüleri
-🔹 ![Ana Takvim Görünümü](screenshots/calendar-main.png)
+🔹 ![Ana Takvim Görünümü](screenshots\calendar-main.png)
 
 🔹 Personel Detay Pop-up
     (screenshots/event-details.png)
