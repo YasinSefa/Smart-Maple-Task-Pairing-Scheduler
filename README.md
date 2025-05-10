@@ -51,12 +51,13 @@ Bileşen yapısı sadeleştirildi ve tekrar kullanılabilir hâle getirildi.
 
 
 📸 Ekran Görüntüleri
-🔹 ![Ana Takvim Görünümü](calendar-main.png)
+🔹 ![Ana Takvim Görünümü](screenshots/calendar-main.png)
 
 🔹 Personel Detay Pop-up
-    (event-details)
+    (screenshots/event-details.png)
+
 🔹 React-Redux Drag Drop Özelliği
-    (redux.png)
+    (screenshots/redux.png)
 
 
 ✨ Teşekkürler
