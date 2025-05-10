@@ -12,7 +12,7 @@ Projeyi başlatmak için aşağıdaki komutları çalıştırabilirsiniz:
 ```bash
 npm install --legacy-peer-deps
 npm run dev
-
+```
 
 Tamamlanan Geliştirmeler
 
@@ -51,14 +51,10 @@ Bileşen yapısı sadeleştirildi ve tekrar kullanılabilir hâle getirildi.
 
 
 📸 Ekran Görüntüleri
+🔹 ![Ana Takvim Görünümü](screenshots/calendar-main.png)
 
+🔹 ![Personel Detay Pop-up](screenshots/event-details.png)
 
-![Ana Takvim Görünümü](screenshots/calendar-main.png)
-
-
-![Personel Detay Pop-up](screenshots/event-details.png)
-
-
-![React-Redux Drag Drop Özelliği](screenshots/redux.png)
+🔹 ![React-Redux Drag Drop Özelliği](screenshots/redux.png)
 
 ✨ Teşekkürler
