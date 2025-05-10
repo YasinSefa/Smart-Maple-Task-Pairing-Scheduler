@@ -51,9 +51,13 @@ Bileşen yapısı sadeleştirildi ve tekrar kullanılabilir hâle getirildi.
 
 
 📸 Ekran Görüntüleri
-![Ana Takvim Görünümü](https://github.com/YasinSefa/Smart-Maple-Task-Pairing-Scheduler/blob/main/screenshots/calendar-main.png)
-![Personel Detay Pop-up](https://github.com/YasinSefa/Smart-Maple-Task-Pairing-Scheduler/blob/main/screenshots/event-details.png)
-![React-Redux Drag Drop Özelliği](https://github.com/YasinSefa/Smart-Maple-Task-Pairing-Scheduler/blob/main/screenshots/redux.png)
+🔹 
+![Ana Takvim Görünümü](screenshots/calendar-main.png)
 
+🔹 
+![Personel Detay Pop-up](screenshots/event-details.png)
+
+🔹 
+![React-Redux Drag Drop Özelliği](screenshots/redux.png)
 
 ✨ Teşekkürler
