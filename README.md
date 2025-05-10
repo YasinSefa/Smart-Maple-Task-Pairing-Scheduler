@@ -51,7 +51,9 @@ Bileşen yapısı sadeleştirildi ve tekrar kullanılabilir hâle getirildi.
 
 
 📸 Ekran Görüntüleri
-🔹 
+
+### **📌 1. Genel Uygulama Görünümü**
+
 ![Ana Takvim Görünümü](screenshots/calendar-main.png)
 
 🔹 
